@@ -1,11 +1,12 @@
 import axios from "../../api/AxiosConfig";
 import { loadUser } from "../reducers/UserSlice";
 
-const asyncUser = async () => {
+const asyncUser = ()=> async (dispatch,getState) => {
     try {
+        console.log(getState())
         const response = await axios.get("/users");
-        console.log(response.data);
-        return loadUser(response.data);
+     
+        dispatch(loadUser(response.data));
     } catch (error) {
         console.error(error);
     }
