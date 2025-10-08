@@ -1,1 +1,24 @@
 @import "tailwindcss";
+.gradient-bg{
+    background: #E4E4E4;
+    background: linear-gradient(178deg, rgba(228, 228, 228, 1) 0%, rgb(232, 211, 140) 100%);
+}
+.bg-image{
+    /* background-image: url('https://i.postimg.cc/8PZgQwY5/black-friday-sales-sign-neon-light.jpg'); */
+    background-image: url('https://i.postimg.cc/25TMZ7sM/fgjr7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);              /* semi-transparent layer */
+border-radius: 16px;                                 /* rounded corners */
+  backdrop-filter: blur(12px) saturate(120%);        /* frosted blur */
+  -webkit-backdrop-filter: blur(12px) saturate(120%);/* Safari support */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);        /* depth/shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glassmorphism:hover {
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
