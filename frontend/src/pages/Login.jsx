@@ -6,9 +6,10 @@ import { NavLink } from 'react-router-dom';
 const Login = () => {
 const {register, handleSubmit,reset} = useForm();
 
-const LoginHandler = (data) => {
-  console.log(data);
+const LoginHandler = (user) => {
+  console.log(user);
 } 
+
   return (
     <div className='bg-image w-screen h-screen flex justify-center items-center p-10'>
 
