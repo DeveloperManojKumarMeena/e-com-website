@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Products from '../pages/Products'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import PageNotFound from '../pages/PageNotFound'
 
 const Mainroutes = () => {
   return (
@@ -12,7 +13,7 @@ const Mainroutes = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="*" element={<PageNotFound />} />
     </Routes>
   )
 }
